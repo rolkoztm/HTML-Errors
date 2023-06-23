@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error 403 - Forbidden</title>
+    <style>
+        body {
+            background-color: #292c33;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #e06c75;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background-color: #61afef;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #5276b5;
+        }
+
+        .error-code {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            font-size: 2rem;
+            color: #e06c75;
+        }
+
+        @keyframes pulse {
+            0% {
+                background-color: #e06c75;
+            }
+            50% {
+                background-color: #61afef;
+            }
+            100% {
+                background-color: #e06c75;
+            }
+        }
+
+        .animation-container {
+            margin-top: 1rem;
+        }
+
+        .animation-dot {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0.3rem;
+            background-color: #e06c75;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ooops!</h1>
+        <p>Looks like you don't have permission to access this page.</p>
+        <div class="error-code">403</div>
+        <div class="animation-container">
+            <?php for ($i = 0; $i < 60; $i++) { ?>
+                <span class="animation-dot"></span>
+            <?php } ?>
+        </div>
+    </div>
+</body>
+</html>

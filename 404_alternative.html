@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error 404 - Page Not Found</title>
+    <style>
+        /* Resetowanie domyślnych stylów */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Układ strony */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Animacja tła */
+        .bg-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #FFB6C1, #FFC0CB, #FF69B4, #FF1493);
+            background-size: 400% 400%;
+            animation: gradient 12s ease-in-out infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Blok z treścią */
+        .content {
+            text-align: center;
+            z-index: 1;
+            position: relative;
+            padding: 20px;
+            color: #fff;
+        }
+
+        /* Nagłówek */
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Podtytuł */
+        p {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Przycisk */
+        .button {
+            display: inline-block;
+            background-color: #fff;
+            color: #FF1493;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #FF1493;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-animation"></div>
+        <div class="content">
+            <h1>Error 404</h1>
+            <p>Page Not Found</p>
+            <a href="#" class="button">Go back</a>
+        </div>
+    </div>
+</body>
+</html>
